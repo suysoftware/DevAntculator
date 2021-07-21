@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TezAPPV2", "TezAPPV2.csproj", "{BC76E5DD-955E-46F1-8D83-E9AA3E4E15AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC76E5DD-955E-46F1-8D83-E9AA3E4E15AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC76E5DD-955E-46F1-8D83-E9AA3E4E15AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC76E5DD-955E-46F1-8D83-E9AA3E4E15AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC76E5DD-955E-46F1-8D83-E9AA3E4E15AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35AB6FF7-C653-41E7-8807-DC99E809419C}
+	EndGlobalSection
+EndGlobal

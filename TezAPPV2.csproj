@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC76E5DD-955E-46F1-8D83-E9AA3E4E15AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TezAPPV2</RootNamespace>
+    <AssemblyName>TezAPPV2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FuzzyLogicController">
+      <HintPath>..\..\..\OneDrive\Masaüstü\FuzzyLogicController.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=1.0.1.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.1.6\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="StringTok">
+      <HintPath>..\..\..\OneDrive\Masaüstü\FuzzyLogicController\FuzzyLogicUI\bin\Debug\StringTok.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XamlBuildTask" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IEntity.cs" />
+    <Compile Include="Entities\DashboardDataInfo.cs" />
+    <Compile Include="Entities\MailDataInfo.cs" />
+    <Compile Include="Entities\ProjectLabDataInfo.cs" />
+    <Compile Include="Entities\ShortDataInfo.cs" />
+    <Compile Include="Entities\StandartDataInfo.cs" />
+    <Compile Include="Entities\TalepDataInfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAnalyzeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAnalyzeData.Designer.cs">
+      <DependentUpon>FormAnalyzeData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBaseControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBaseControl.Designer.cs">
+      <DependentUpon>FormBaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDashBoard.Designer.cs">
+      <DependentUpon>FormDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormIDFinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormIDFinder.Designer.cs">
+      <DependentUpon>FormIDFinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormIDFinderBasicS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormIDFinderBasicS.Designer.cs">
+      <DependentUpon>FormIDFinderBasicS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormIDFinderDetailS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormIDFinderDetailS.Designer.cs">
+      <DependentUpon>FormIDFinderDetailS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormIDRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormIDRegister.Designer.cs">
+      <DependentUpon>FormIDRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMeasurments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMeasurments.Designer.cs">
+      <DependentUpon>FormMeasurments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FuzzyLogic.cs" />
+    <Compile Include="Model\Graphcontrol.cs" />
+    <Compile Include="Model\Measur.cs" />
+    <Compile Include="Model\orderbyarmy.cs" />
+    <Compile Include="Model\Postman.cs" />
+    <Compile Include="Model\RuleItemUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\RuleItemUI.Designer.cs">
+      <DependentUpon>RuleItemUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paths\ConnectingPaths.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RJControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlOperations\AddNewPerson.cs" />
+    <Compile Include="SqlOperations\AddNewSeason.cs" />
+    <Compile Include="SqlOperations\ClearTheDataBase.cs" />
+    <Compile Include="SqlOperations\DeleteThePerson.cs" />
+    <Compile Include="SqlOperations\GetIdDetail.cs" />
+    <Compile Include="SqlOperations\GetMailData.cs" />
+    <Compile Include="SqlOperations\GetOrderData.cs" />
+    <Compile Include="SqlOperations\GetProjectLabData.cs" />
+    <Compile Include="SqlOperations\GetSeasonsDetail.cs" />
+    <Compile Include="SqlOperations\GetShortData.cs" />
+    <Compile Include="SqlOperations\GetStandart.cs" />
+    <Compile Include="SqlOperations\LoadThePerson.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAnalyzeData.resx">
+      <DependentUpon>FormAnalyzeData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBaseControl.resx">
+      <DependentUpon>FormBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDashBoard.resx">
+      <DependentUpon>FormDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormIDFinder.resx">
+      <DependentUpon>FormIDFinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormIDFinderBasicS.resx">
+      <DependentUpon>FormIDFinderBasicS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormIDFinderDetailS.resx">
+      <DependentUpon>FormIDFinderDetailS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormIDRegister.resx">
+      <DependentUpon>FormIDRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMeasurments.resx">
+      <DependentUpon>FormMeasurments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\RuleItemUI.resx">
+      <DependentUpon>RuleItemUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngkucuk-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO%282800X2800%29%28LOW%29png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logobyz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-out %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizethewindow_theapplication_maximizar_2873.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A8TRIUM.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A77TRIUM.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A87TRIUM.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A8NETWORKPIC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A77NETWORKPIC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A87NETWORKPIC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLASSİC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grcck.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logomini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logobyzmini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40logobyzmini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60logobyzmini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80logobyzmini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37logobyzmini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turnermain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turnermain1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaa %2814%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13062021.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armyequipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armyequipmentnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progresspic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greyprogresspic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progresspic22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greyprogresspic222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armdesigggggg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\denizci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\havaci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karaci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOPLU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\measurmentss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logobyz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logobyz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UFUK ABİ 77 SAYDAM.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRIUMMM.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NETWORKKKK.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
