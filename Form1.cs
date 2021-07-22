@@ -15,7 +15,6 @@ namespace TezAPPV2
 {
     public partial class FormMainMenu : Form
     {
-
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
