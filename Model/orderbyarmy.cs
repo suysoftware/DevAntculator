@@ -26,8 +26,6 @@ namespace TezAPPV2.Model
                 _baglan2.Open();
             }
         }
-
-
         public List<orderbyarmy> OrderGetArmy()
         {
             connect2();
@@ -53,8 +51,6 @@ namespace TezAPPV2.Model
             reader.Close();
             _baglan2.Close();
             return orderbyarmys;
-
-
 
         }
 

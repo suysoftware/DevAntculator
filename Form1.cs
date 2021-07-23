@@ -20,7 +20,6 @@ namespace TezAPPV2
         private Form currentChildForm;
         public FormMainMenu()
         {
-            
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
@@ -115,7 +114,6 @@ namespace TezAPPV2
         private void Form1_Load(object sender, EventArgs e)
         {
            
-
         }
 
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
