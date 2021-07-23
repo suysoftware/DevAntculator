@@ -145,9 +145,9 @@ namespace TezAPPV2
         private void FinderButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            
             OpenChildForm(new FormIDFinder());
         }
-
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
