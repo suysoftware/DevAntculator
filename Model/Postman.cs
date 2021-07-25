@@ -13,6 +13,7 @@ using System.Net.Mime;
 namespace TezAPPV2.Model
 {
       public int totalsoldier { get; set; }
+      public int karakuvvet { get; set; }
 
 
 }
