@@ -14,6 +14,7 @@ namespace TezAPPV2.Model
 {
       public int totalsoldier { get; set; }
       public int karakuvvet { get; set; }
+      public int denizkuvvet { get; set; }//270
 
 
 }
