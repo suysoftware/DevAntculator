@@ -19,6 +19,8 @@ namespace TezAPPV2.Model
       public int karatotalchest { get; set; }
       public int havatotalchest { get; set; }
       public int deniztotalchest { get; set; }
+      public int kara_xs_chest { get; set; }
+      public int kara_s_chest { get; set; }
 
 
 }
