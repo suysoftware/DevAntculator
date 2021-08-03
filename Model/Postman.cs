@@ -22,6 +22,7 @@ namespace TezAPPV2.Model
       public int kara_xs_chest { get; set; }
       public int kara_s_chest { get; set; }
       public int kara_m_chest { get; set; }
+      public int kara_l_chest { get; set; }
 
 
 }
