@@ -32,6 +32,7 @@ namespace TezAPPV2.Model
       public int hava_2l_chest { get; set; }
       public int hava_xxl_chest { get; set; }
       public int deniz_xs_chest { get; set; }
+      public int deniz_s_chest { get; set; }
 
 
 }
