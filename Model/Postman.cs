@@ -37,6 +37,7 @@ namespace TezAPPV2.Model
       public int deniz_l_chest { get; set; }
       public int deniz_xl_chest { get; set; }
       public int deniz_2xl_chest { get; set; }
+      public int karatotalbot { get; set; }
 
 
 }
