@@ -57,6 +57,7 @@ namespace TezAPPV2.Model
       public int kara_48_bot { get; set; }
       public int hava_34_bot { get; set; }
       public int hava_35_bot { get; set; }
+      public int hava_36_bot { get; set; }
 
 
 }
