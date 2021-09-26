@@ -63,6 +63,10 @@ namespace TezAPPV2.Model
       public int hava_39_bot { get; set; }
       public int hava_40_bot { get; set; }
       public int hava_41_bot { get; set; }
+      public int hava_42_bot { get; set; }
+      public int hava_43_bot { get; set; }
+      public int hava_44_bot { get; set; }
+      public int hava_45_bot { get; set; }
 
 
 }
