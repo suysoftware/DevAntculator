@@ -109,6 +109,21 @@ namespace TezAPPV2.Model
             public int deniz_m_pant { get; set; }
             public int deniz_l_pant { get; set; }
             public int deniz_xl_pant { get; set; }
+               public int deniz_2xl_pant { get; set; }
+        public int deniz_3xl_pant { get; set; }
+        public int deniz_bxl_pant { get; set; }
+        public int karatotalhands { get; set; }
+        public int havatotalhands { get; set; }
+        public int deniztotalhands { get; set; }
+        public int kara_xs_hands { get; set; }
+        public int kara_s_hands { get; set; }
+        public int kara_m_hands { get; set; }
+        public int kara_l_hands { get; set; }
+        public int kara_xl_hands { get; set; }
+        public int kara_2xl_hands { get; set; }
+        public int hava_xs_hands { get; set; }
+        public int hava_s_hands { get; set; }
+        public int hava_m_hands { get; set; }
 
 
 }
