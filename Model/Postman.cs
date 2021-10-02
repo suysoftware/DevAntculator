@@ -125,5 +125,15 @@ namespace TezAPPV2.Model
         public int hava_s_hands { get; set; }
         public int hava_m_hands { get; set; }
 
+        public int hava_l_hands { get; set; }
+        public int hava_xl_hands { get; set; }
+        public int hava_2xl_hands { get; set; }
+        public int deniz_xs_hands { get; set; }
+        public int deniz_s_hands { get; set; }
+        public int deniz_m_hands { get; set; }
+        public int deniz_l_hands { get; set; }
+        public int deniz_xl_hands { get; set; }
+        public int deniz_2xl_hands { get; set; }
+
 
 }
